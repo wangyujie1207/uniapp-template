@@ -1,0 +1,24 @@
+{
+  "name": "star-shop",
+  "version": "1.0.0",
+  "description": "uniapp起始模板",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyujie1207/uniapp-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangyujie1207/uniapp-template/issues"
+  },
+  "homepage": "https://github.com/wangyujie1207/uniapp-template#readme",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21"
+  }
+}
