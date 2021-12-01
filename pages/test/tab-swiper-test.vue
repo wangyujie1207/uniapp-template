@@ -8,7 +8,7 @@
 			<swiper-item class="swiper-item" v-for="(item, index) in tabList" :key="index">
 				<swiper-list-item path="/goods/goods_list" :tabIndex="index" :currentIndex="swiperCurrent">
 					<template #list="scope">
-						<view>{{scope.props.length}}</view>
+						<view>{{scope.props}}</view>
 					</template>
 				</swiper-list-item>
 			</swiper-item>

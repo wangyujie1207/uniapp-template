@@ -12,7 +12,13 @@
 		{
 			"path": "pages/test/tab-swiper-test",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "tab-swiper-list"
+			}
+		},
+		{
+			"path": "pages/test/test_list",
+			"style": {
+				"navigationBarTitleText": "list-paging"
 			}
 		}
 	],

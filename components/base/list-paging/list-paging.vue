@@ -2,7 +2,8 @@
 	<view class="content">
 		<z-paging ref="paging" v-model="dataList" @query="queryList">
 			<template #top v-if="tabs.length">
-				<TabView @change="tabChange" :items="tabs" />
+				<!-- <TabView @change="tabChange" :items="tabs" /> -->
+				<u-tabs :list="tabs" @change="tabChange"></u-tabs>
 			</template>
 			<slot name="list" :props="dataList" v-if="dataList && dataList.length" />
 		</z-paging>
@@ -40,8 +41,8 @@
 			}
 		},
 		methods: {
-			tabChange(index) {
-				this.currentTabIndex = index;
+			tabChange(tab) {
+				this.currentTabIndex = tab.index;
 				this.$refs.paging.reload();
 			},
 			async queryList(page, limit) {
@@ -51,8 +52,7 @@
 						url: path,
 						data: {
 							page,
-							limit,
-							type: currentTab.value
+							limit
 						},
 						method: 'POST',
 						showLoading: false
